@@ -16,20 +16,24 @@ public class StoreDTO {
 	private String sphone3;
 	private String menu;
 	private int sprice;
+
 	private char parking;
-	private int rating;
 	private int ratingCnt;
+	private int rating;
 	private String imgSrc1;
 	private String imgSrc2;
 	private String imgSrc3;
 	private String imgSrc4;
 	
-	public StoreDTO() {
-	}
-
-	public StoreDTO(String sid, String sname, int shour1, int shour2, String post1, String post2, String addr1,
-			String addr2, String scategory, String sphone1, String sphone2, String sphone3, String menu, int sprice,
-			char parking, int rating, int ratingCnt, String imgSrc1, String imgSrc2, String imgSrc3, String imgSrc4) {
+	public StoreDTO(String sid, String sname, 
+			int shour1, int shour2, 
+			String post1, String post2, 
+			String addr1,String addr2, 
+			String scategory, 
+			String sphone1, String sphone2, String sphone3, 
+			String menu, int sprice,
+			char parking, int ratingCnt, int rating, 
+			String imgSrc1, String imgSrc2, String imgSrc3, String imgSrc4) {
 		super();
 		this.sid = sid;
 		this.sname = sname;
@@ -46,12 +50,15 @@ public class StoreDTO {
 		this.menu = menu;
 		this.sprice = sprice;
 		this.parking = parking;
-		this.rating = rating;
 		this.ratingCnt = ratingCnt;
+		this.rating = rating;
 		this.imgSrc1 = imgSrc1;
 		this.imgSrc2 = imgSrc2;
 		this.imgSrc3 = imgSrc3;
 		this.imgSrc4 = imgSrc4;
+	}
+
+	public StoreDTO() {
 	}
 
 	public String getSid() {
